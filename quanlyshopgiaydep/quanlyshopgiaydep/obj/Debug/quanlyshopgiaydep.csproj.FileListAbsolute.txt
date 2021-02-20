@@ -1,0 +1,10 @@
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\bin\Debug\quanlyshopgiaydep.exe.config
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\bin\Debug\quanlyshopgiaydep.exe
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\bin\Debug\quanlyshopgiaydep.pdb
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.csprojAssemblyReference.cache
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.frmlogin.resources
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.Properties.Resources.resources
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.csproj.GenerateResource.cache
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.csproj.CoreCompileInputs.cache
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.exe
+D:\doancoso\quanlyshopgiaydep\quanlyshopgiaydep\obj\Debug\quanlyshopgiaydep.pdb
