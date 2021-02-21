@@ -31,8 +31,8 @@ namespace quanlyshopgiaydep
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtAccountName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.txtAccountName = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
@@ -48,7 +48,7 @@ namespace quanlyshopgiaydep
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(104, 63);
+            this.label1.Location = new System.Drawing.Point(120, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 25);
             this.label1.TabIndex = 0;
@@ -60,19 +60,10 @@ namespace quanlyshopgiaydep
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtAccountName);
-            this.panel1.Location = new System.Drawing.Point(37, 108);
+            this.panel1.Location = new System.Drawing.Point(43, 105);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(251, 29);
+            this.panel1.Size = new System.Drawing.Size(289, 29);
             this.panel1.TabIndex = 1;
-            // 
-            // txtAccountName
-            // 
-            this.txtAccountName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAccountName.Location = new System.Drawing.Point(72, 3);
-            this.txtAccountName.Name = "txtAccountName";
-            this.txtAccountName.Size = new System.Drawing.Size(176, 20);
-            this.txtAccountName.TabIndex = 1;
             // 
             // label2
             // 
@@ -80,9 +71,18 @@ namespace quanlyshopgiaydep
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(3, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "User :";
+            this.label2.Text = "Tên đăng nhập  :";
+            // 
+            // txtAccountName
+            // 
+            this.txtAccountName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAccountName.Location = new System.Drawing.Point(115, 3);
+            this.txtAccountName.Name = "txtAccountName";
+            this.txtAccountName.Size = new System.Drawing.Size(171, 20);
+            this.txtAccountName.TabIndex = 1;
             // 
             // panel2
             // 
@@ -90,10 +90,10 @@ namespace quanlyshopgiaydep
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtPassword);
-            this.panel2.Location = new System.Drawing.Point(37, 140);
+            this.panel2.Location = new System.Drawing.Point(43, 140);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(251, 29);
-            this.panel2.TabIndex = 1;
+            this.panel2.Size = new System.Drawing.Size(289, 29);
+            this.panel2.TabIndex = 2;
             // 
             // label3
             // 
@@ -101,38 +101,39 @@ namespace quanlyshopgiaydep
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(3, 6);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
+            this.label3.Size = new System.Drawing.Size(68, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Password :";
+            this.label3.Text = "Mật khẩu :";
             // 
             // txtPassword
             // 
             this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(72, 3);
+            this.txtPassword.Location = new System.Drawing.Point(115, 3);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(176, 20);
+            this.txtPassword.Size = new System.Drawing.Size(171, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(132, 175);
+            this.btnlogin.Location = new System.Drawing.Point(166, 175);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(75, 23);
-            this.btnlogin.TabIndex = 2;
+            this.btnlogin.TabIndex = 3;
             this.btnlogin.Text = "&Đăng nhập";
             this.btnlogin.UseVisualStyleBackColor = true;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(213, 175);
+            this.btnExit.Location = new System.Drawing.Point(257, 175);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
-            this.btnExit.TabIndex = 2;
+            this.btnExit.TabIndex = 4;
             this.btnExit.Text = "&Thoát";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // frmlogin
             // 

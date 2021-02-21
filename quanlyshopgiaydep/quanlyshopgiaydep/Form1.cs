@@ -14,6 +14,7 @@ namespace quanlyshopgiaydep
     {
         public frmlogin()
         {
+            
             InitializeComponent();
         }
         public bool isEmpty()
@@ -37,6 +38,11 @@ namespace quanlyshopgiaydep
             {
                 MessageBox.Show("User hoặc password của bạn đã sai , vui lòng nhập lại", "xin chia buồn");
             }
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 
