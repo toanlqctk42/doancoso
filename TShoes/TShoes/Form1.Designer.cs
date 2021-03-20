@@ -106,7 +106,7 @@ namespace TShoes
             this.AcceptButton = this.btnlogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 234);
+            this.ClientSize = new System.Drawing.Size(366, 229);
             this.Controls.Add(this.btnoff);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtPassword);
