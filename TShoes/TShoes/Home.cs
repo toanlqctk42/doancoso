@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraBars;
+﻿using DevExpress.DXperience.Demos;
+using DevExpress.XtraBars;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,7 +7,9 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using TShoes.UI.Modules;
 
 namespace TShoes
 {
@@ -15,6 +18,7 @@ namespace TShoes
         public frmHome()
         {
             InitializeComponent();
+            this.fluentDesignFormContainer1.Controls.Add(new uchome() { Dock = DockStyle.Fill });
         }
 
         private void acelogout_Click(object sender, EventArgs e)
@@ -23,41 +27,78 @@ namespace TShoes
             login.Show();
             this.Close();
         }
-
-        private void btnThaydoi_Click(object sender, EventArgs e)
+        public async Task LoadModuleAsync(ModuleInfo module)
         {
-            txtGioithieu.ReadOnly = false;
-            mtbNgaythanhlap.ReadOnly = false;
-            txtBoss.ReadOnly = false;
-            txtsdtshop.ReadOnly = false;
-            txtDiachishop.ReadOnly = false;
-            mtbGiomocua.ReadOnly = false;
-            mtpGiodongcua.ReadOnly = false;
-            btnLuu.Enabled = true;
-            btnHuy.Enabled = true;
-            btnThaydoi.Enabled = false;
+            await Task.Factory.StartNew(() =>
+            {
+                if(!fluentDesignFormContainer1.Controls.ContainsKey(module.Name))
+                {
+                    TutorialControlBase control = module.TModule as TutorialControlBase;
+                    if (control != null)
+                    {
+                        control.Dock = DockStyle.Fill;
+                        control.CreateWaitDialog();
+                        fluentDesignFormContainer1.Invoke(new MethodInvoker(delegate () 
+                        {
+                            fluentDesignFormContainer1.Controls.Add(control);
+                            control.BringToFront();
+                        }));
+                    }
+                }
+                else
+                {
+                    var control = fluentDesignFormContainer1.Controls.Find(module.Name, true);
+                    if (control.Length == 1)
+                        fluentDesignFormContainer1.Invoke(new MethodInvoker(delegate ()
+                        {
+                            control[0].BringToFront();
+                        }));
+                }
+            }
+            );
+        }
+        
+        private async void acesanpham_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucsanpham") == null)
+                ModulesInfo.Add(new ModuleInfo("ucsanpham", "TShoes.UI.Modules.ucsanpham"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucsanpham"));
         }
 
-        private void btnLuu_Click(object sender, EventArgs e)
+        private async void acehome_Click(object sender, EventArgs e)
         {
-            
-            this.txtGioithieu.Text = txtGioithieu.Text;
-            this.mtbNgaythanhlap.Text = mtbNgaythanhlap.Text;
-            btnHuy.PerformClick();
+            if (ModulesInfo.GetItem("uchome") == null)
+                ModulesInfo.Add(new ModuleInfo("uchome", "TShoes.UI.Modules.uchome"));
+            await LoadModuleAsync(ModulesInfo.GetItem("uchome"));
         }
 
-        private void btnHuy_Click(object sender, EventArgs e)
+
+        private async void acexemtaikhoan_Click(object sender, EventArgs e)
         {
-            txtGioithieu.ReadOnly = true;
-            mtbNgaythanhlap.ReadOnly = true;
-            txtBoss.ReadOnly = true;
-            txtsdtshop.ReadOnly = true;
-            txtDiachishop.ReadOnly = true;
-            mtbGiomocua.ReadOnly = true;
-            mtpGiodongcua.ReadOnly = true;
-            btnLuu.Enabled = false;
-            btnHuy.Enabled = false;
-            btnThaydoi.Enabled = true;
+            if (ModulesInfo.GetItem("ucaccount") == null)
+                ModulesInfo.Add(new ModuleInfo("ucaccount", "TShoes.UI.Modules.ucaccount"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucaccount"));
+        }
+
+        private async void acetaodonhangmoi_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucBills") == null)
+                ModulesInfo.Add(new ModuleInfo("ucBills", "TShoes.UI.Modules.ucBills"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucBills"));
+        }
+
+        private async void acecapnhatdonhang_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucBills") == null)
+                ModulesInfo.Add(new ModuleInfo("ucBills", "TShoes.UI.Modules.ucBills"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucBills"));
+        }
+
+        private async void acexemdonhang_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucdonhang") == null)
+                ModulesInfo.Add(new ModuleInfo("ucdonhang", "TShoes.UI.Modules.ucdonhang"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucdonhang"));
         }
     }
 }

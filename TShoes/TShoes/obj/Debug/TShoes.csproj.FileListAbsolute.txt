@@ -117,3 +117,8 @@ G:\test\doancoso\TShoes\TShoes\bin\Debug\de\DevExpress.XtraGrid.v18.1.resources.
 G:\test\doancoso\TShoes\TShoes\bin\Debug\es\DevExpress.XtraGrid.v18.1.resources.dll
 G:\test\doancoso\TShoes\TShoes\bin\Debug\ja\DevExpress.XtraGrid.v18.1.resources.dll
 G:\test\doancoso\TShoes\TShoes\bin\Debug\ru\DevExpress.XtraGrid.v18.1.resources.dll
+G:\test\doancoso\TShoes\TShoes\obj\Debug\TShoes.UI.Modules.ucaccount.resources
+G:\test\doancoso\TShoes\TShoes\obj\Debug\TShoes.UI.Modules.ucBills.resources
+G:\test\doancoso\TShoes\TShoes\obj\Debug\TShoes.UI.Modules.ucdonhang.resources
+G:\test\doancoso\TShoes\TShoes\obj\Debug\TShoes.UI.Modules.ucsanpham.resources
+G:\test\doancoso\TShoes\TShoes\obj\Debug\TShoes.UI.Modules.uchome.resources
