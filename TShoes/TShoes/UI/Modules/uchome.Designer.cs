@@ -180,7 +180,7 @@ namespace TShoes.UI.Modules
             this.txtDiachishop.Multiline = true;
             this.txtDiachishop.Name = "txtDiachishop";
             this.txtDiachishop.ReadOnly = true;
-            this.txtDiachishop.Size = new System.Drawing.Size(100, 20);
+            this.txtDiachishop.Size = new System.Drawing.Size(271, 20);
             this.txtDiachishop.TabIndex = 5;
             // 
             // label4
@@ -207,7 +207,7 @@ namespace TShoes.UI.Modules
             this.txtsdtshop.Multiline = true;
             this.txtsdtshop.Name = "txtsdtshop";
             this.txtsdtshop.ReadOnly = true;
-            this.txtsdtshop.Size = new System.Drawing.Size(100, 20);
+            this.txtsdtshop.Size = new System.Drawing.Size(142, 20);
             this.txtsdtshop.TabIndex = 4;
             // 
             // label3
@@ -234,7 +234,7 @@ namespace TShoes.UI.Modules
             this.mtbNgaythanhlap.Mask = "00/00/0000";
             this.mtbNgaythanhlap.Name = "mtbNgaythanhlap";
             this.mtbNgaythanhlap.ReadOnly = true;
-            this.mtbNgaythanhlap.Size = new System.Drawing.Size(100, 21);
+            this.mtbNgaythanhlap.Size = new System.Drawing.Size(142, 21);
             this.mtbNgaythanhlap.TabIndex = 1;
             this.mtbNgaythanhlap.ValidatingType = typeof(System.DateTime);
             // 
@@ -262,7 +262,7 @@ namespace TShoes.UI.Modules
             this.txtBoss.Multiline = true;
             this.txtBoss.Name = "txtBoss";
             this.txtBoss.ReadOnly = true;
-            this.txtBoss.Size = new System.Drawing.Size(100, 20);
+            this.txtBoss.Size = new System.Drawing.Size(142, 20);
             this.txtBoss.TabIndex = 3;
             // 
             // label2

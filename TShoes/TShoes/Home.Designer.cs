@@ -56,8 +56,9 @@ namespace TShoes
             this.accordionControl1.Location = new System.Drawing.Point(0, 27);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.OptionsMinimizing.NormalWidth = 260;
+            this.accordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 503);
+            this.accordionControl1.Size = new System.Drawing.Size(40, 503);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -160,9 +161,9 @@ namespace TShoes
             // fluentDesignFormContainer1
             // 
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(260, 27);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(40, 27);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(550, 503);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(770, 503);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // frmHome
