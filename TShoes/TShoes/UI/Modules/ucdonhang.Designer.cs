@@ -35,14 +35,14 @@ namespace TShoes.UI.Modules
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -98,8 +98,8 @@ namespace TShoes.UI.Modules
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel3);
+            this.flowLayoutPanel1.Controls.Add(this.panel1);
             this.flowLayoutPanel1.Controls.Add(this.panel4);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(6, 20);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -110,10 +110,17 @@ namespace TShoes.UI.Modules
             // 
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
+            this.panel1.Location = new System.Drawing.Point(331, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 42);
             this.panel1.TabIndex = 0;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(64, 10);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(127, 21);
+            this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
@@ -124,27 +131,20 @@ namespace TShoes.UI.Modules
             this.label2.TabIndex = 0;
             this.label2.Text = "Tổng :";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(64, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 21);
-            this.textBox1.TabIndex = 1;
-            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Location = new System.Drawing.Point(209, 3);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 42);
+            this.panel3.Size = new System.Drawing.Size(322, 42);
             this.panel3.TabIndex = 0;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(56, 10);
+            this.textBox3.Location = new System.Drawing.Point(119, 10);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(127, 21);
+            this.textBox3.Size = new System.Drawing.Size(155, 21);
             this.textBox3.TabIndex = 1;
             // 
             // label4
@@ -152,18 +152,26 @@ namespace TShoes.UI.Modules
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 13);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(110, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "label2";
+            this.label4.Text = "Nhân Viên bán hàng :";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.dateTimePicker1);
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Location = new System.Drawing.Point(415, 3);
+            this.panel4.Location = new System.Drawing.Point(537, 3);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(162, 55);
             this.panel4.TabIndex = 0;
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(24, 16);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(127, 21);
+            this.dateTimePicker1.TabIndex = 1;
             // 
             // label5
             // 
@@ -173,14 +181,6 @@ namespace TShoes.UI.Modules
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Chọn ngày xem";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(24, 16);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(127, 21);
-            this.dateTimePicker1.TabIndex = 1;
             // 
             // ucdonhang
             // 
