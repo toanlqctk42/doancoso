@@ -17,5 +17,7 @@ namespace TShoes.UI.Modules
         {
             InitializeComponent();
         }
+
+
     }
 }

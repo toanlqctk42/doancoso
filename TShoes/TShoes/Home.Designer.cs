@@ -31,7 +31,6 @@ namespace TShoes
         {
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.acehome = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.acesanpham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acedonhang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acetaodonhangmoi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acecapnhatdonhang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -50,7 +49,6 @@ namespace TShoes
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.acehome,
-            this.acesanpham,
             this.acedonhang,
             this.aceaccount});
             this.accordionControl1.Location = new System.Drawing.Point(0, 27);
@@ -72,17 +70,6 @@ namespace TShoes
             this.acehome.Name = "acehome";
             this.acehome.Text = "Trang Chủ";
             this.acehome.Click += new System.EventHandler(this.acehome_Click);
-            // 
-            // acesanpham
-            // 
-            this.acesanpham.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
-            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
-            this.acesanpham.Name = "acesanpham";
-            this.acesanpham.Text = "Sản Phẩm";
-            this.acesanpham.Click += new System.EventHandler(this.acesanpham_Click);
             // 
             // acedonhang
             // 
@@ -189,7 +176,6 @@ namespace TShoes
         private DevExpress.XtraBars.Navigation.AccordionControl accordionControl1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acehome;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement acesanpham;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acedonhang;
         private DevExpress.XtraBars.Navigation.AccordionControlElement aceaccount;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acexemtaikhoan;

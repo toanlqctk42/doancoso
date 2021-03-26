@@ -17,11 +17,40 @@ namespace TShoes
     {
         public frmHome()
         {
+            
             InitializeComponent();
-            this.fluentDesignFormContainer1.Controls.Add(new uchome() { Dock = DockStyle.Fill });
+            int widthscreen = Screen.PrimaryScreen.WorkingArea.Width;
+            int heighscreen = Screen.PrimaryScreen.WorkingArea.Height;
+            this.Width = widthscreen;
+            this.Height = heighscreen;
+            float WidthPerscpective = (float)Width / 820;
+            float HeightPerscpective = (float)Height / 535;
+            ResizeAllControls(this, WidthPerscpective, HeightPerscpective);
+            this.fluentDesignFormContainer1.Controls.Add(new ucsanpham() { Dock = DockStyle.Fill });
         }
 
-        private void acelogout_Click(object sender, EventArgs e)
+        private void ResizeAllControls(Control recussiveControl, float widthPerscpective, float heightPerscpective)
+        {
+            foreach (Control control in recussiveControl.Controls)
+            {
+                if (control.Controls.Count != 0)
+
+                    ResizeAllControls(control, widthPerscpective, heightPerscpective);
+
+                //canh lại toạ độ x, y, chiều rộng, cao cho các control trên form
+
+                control.Left = (int)(control.Left * widthPerscpective);
+
+                control.Top = (int)(control.Top * heightPerscpective);
+
+                control.Width = (int)(control.Width * widthPerscpective);
+
+                control.Height = (int)(control.Height * heightPerscpective);
+
+            }
+        }
+
+            private void acelogout_Click(object sender, EventArgs e)
         {
             frmlogin login = new frmlogin();
             login.Show();
@@ -58,18 +87,12 @@ namespace TShoes
             );
         }
         
-        private async void acesanpham_Click(object sender, EventArgs e)
+
+        private async void acehome_Click(object sender, EventArgs e)
         {
             if (ModulesInfo.GetItem("ucsanpham") == null)
                 ModulesInfo.Add(new ModuleInfo("ucsanpham", "TShoes.UI.Modules.ucsanpham"));
             await LoadModuleAsync(ModulesInfo.GetItem("ucsanpham"));
-        }
-
-        private async void acehome_Click(object sender, EventArgs e)
-        {
-            if (ModulesInfo.GetItem("uchome") == null)
-                ModulesInfo.Add(new ModuleInfo("uchome", "TShoes.UI.Modules.uchome"));
-            await LoadModuleAsync(ModulesInfo.GetItem("uchome"));
         }
 
 

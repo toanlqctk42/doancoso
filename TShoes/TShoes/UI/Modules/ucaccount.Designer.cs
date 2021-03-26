@@ -87,16 +87,17 @@ namespace TShoes.UI.Modules
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 247);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 308);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 283);
+            this.dataGridView1.Size = new System.Drawing.Size(1104, 331);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnThemAccount
             // 
-            this.btnThemAccount.Location = new System.Drawing.Point(9, 199);
+            this.btnThemAccount.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThemAccount.Location = new System.Drawing.Point(10, 271);
             this.btnThemAccount.Name = "btnThemAccount";
-            this.btnThemAccount.Size = new System.Drawing.Size(75, 23);
+            this.btnThemAccount.Size = new System.Drawing.Size(75, 31);
             this.btnThemAccount.TabIndex = 3;
             this.btnThemAccount.Text = "Thêm";
             this.btnThemAccount.UseVisualStyleBackColor = true;
@@ -104,9 +105,10 @@ namespace TShoes.UI.Modules
             // 
             // btnCapnhat
             // 
-            this.btnCapnhat.Location = new System.Drawing.Point(90, 199);
+            this.btnCapnhat.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapnhat.Location = new System.Drawing.Point(123, 271);
             this.btnCapnhat.Name = "btnCapnhat";
-            this.btnCapnhat.Size = new System.Drawing.Size(75, 23);
+            this.btnCapnhat.Size = new System.Drawing.Size(75, 31);
             this.btnCapnhat.TabIndex = 3;
             this.btnCapnhat.Text = "Cập Nhật";
             this.btnCapnhat.UseVisualStyleBackColor = true;
@@ -115,17 +117,18 @@ namespace TShoes.UI.Modules
             // 
             this.panel2.Controls.Add(this.txtTendangnhap);
             this.panel2.Controls.Add(this.label2);
+            this.panel2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(3, 67);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(324, 37);
+            this.panel2.Size = new System.Drawing.Size(387, 51);
             this.panel2.TabIndex = 4;
             // 
             // txtTendangnhap
             // 
-            this.txtTendangnhap.Location = new System.Drawing.Point(95, 10);
+            this.txtTendangnhap.Location = new System.Drawing.Point(151, 10);
             this.txtTendangnhap.Name = "txtTendangnhap";
             this.txtTendangnhap.ReadOnly = true;
-            this.txtTendangnhap.Size = new System.Drawing.Size(212, 21);
+            this.txtTendangnhap.Size = new System.Drawing.Size(212, 27);
             this.txtTendangnhap.TabIndex = 1;
             // 
             // label2
@@ -133,7 +136,7 @@ namespace TShoes.UI.Modules
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 13);
+            this.label2.Size = new System.Drawing.Size(127, 19);
             this.label2.TabIndex = 0;
             this.label2.Text = "Tên đăng nhập :";
             // 
@@ -141,18 +144,19 @@ namespace TShoes.UI.Modules
             // 
             this.panel3.Controls.Add(this.txtmatkhau);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(3, 110);
+            this.panel3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(3, 137);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(324, 38);
+            this.panel3.Size = new System.Drawing.Size(387, 51);
             this.panel3.TabIndex = 4;
             // 
             // txtmatkhau
             // 
-            this.txtmatkhau.Location = new System.Drawing.Point(105, 11);
+            this.txtmatkhau.Location = new System.Drawing.Point(161, 11);
             this.txtmatkhau.Name = "txtmatkhau";
             this.txtmatkhau.PasswordChar = '*';
             this.txtmatkhau.ReadOnly = true;
-            this.txtmatkhau.Size = new System.Drawing.Size(202, 21);
+            this.txtmatkhau.Size = new System.Drawing.Size(202, 27);
             this.txtmatkhau.TabIndex = 1;
             // 
             // label3
@@ -160,7 +164,7 @@ namespace TShoes.UI.Modules
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 14);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.Size = new System.Drawing.Size(84, 19);
             this.label3.TabIndex = 0;
             this.label3.Text = "Mật khẩu :";
             // 
@@ -168,18 +172,19 @@ namespace TShoes.UI.Modules
             // 
             this.panel4.Controls.Add(this.txtxacnhanmatkhau);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(3, 154);
+            this.panel4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(3, 196);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(324, 34);
+            this.panel4.Size = new System.Drawing.Size(387, 49);
             this.panel4.TabIndex = 4;
             // 
             // txtxacnhanmatkhau
             // 
-            this.txtxacnhanmatkhau.Location = new System.Drawing.Point(105, 8);
+            this.txtxacnhanmatkhau.Location = new System.Drawing.Point(161, 9);
             this.txtxacnhanmatkhau.Name = "txtxacnhanmatkhau";
             this.txtxacnhanmatkhau.PasswordChar = '*';
             this.txtxacnhanmatkhau.ReadOnly = true;
-            this.txtxacnhanmatkhau.Size = new System.Drawing.Size(202, 21);
+            this.txtxacnhanmatkhau.Size = new System.Drawing.Size(202, 27);
             this.txtxacnhanmatkhau.TabIndex = 1;
             // 
             // label4
@@ -187,7 +192,7 @@ namespace TShoes.UI.Modules
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(105, 13);
+            this.label4.Size = new System.Drawing.Size(155, 19);
             this.label4.TabIndex = 0;
             this.label4.Text = "Xác nhận mật khẩu :";
             // 
@@ -196,18 +201,19 @@ namespace TShoes.UI.Modules
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.Controls.Add(this.dtpngaykichhoat);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(456, 110);
+            this.panel5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel5.Location = new System.Drawing.Point(733, 137);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(270, 37);
+            this.panel5.Size = new System.Drawing.Size(354, 51);
             this.panel5.TabIndex = 4;
             // 
             // dtpngaykichhoat
             // 
             this.dtpngaykichhoat.Enabled = false;
             this.dtpngaykichhoat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpngaykichhoat.Location = new System.Drawing.Point(95, 10);
+            this.dtpngaykichhoat.Location = new System.Drawing.Point(164, 7);
             this.dtpngaykichhoat.Name = "dtpngaykichhoat";
-            this.dtpngaykichhoat.Size = new System.Drawing.Size(172, 21);
+            this.dtpngaykichhoat.Size = new System.Drawing.Size(172, 27);
             this.dtpngaykichhoat.TabIndex = 1;
             // 
             // label5
@@ -215,7 +221,7 @@ namespace TShoes.UI.Modules
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 13);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 13);
+            this.label5.Size = new System.Drawing.Size(120, 19);
             this.label5.TabIndex = 0;
             this.label5.Text = "Ngày kích hoạt:";
             // 
@@ -224,18 +230,19 @@ namespace TShoes.UI.Modules
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.cbochucvu);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(456, 153);
+            this.panel6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel6.Location = new System.Drawing.Point(733, 196);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(270, 35);
+            this.panel6.Size = new System.Drawing.Size(354, 49);
             this.panel6.TabIndex = 4;
             // 
             // cbochucvu
             // 
             this.cbochucvu.Enabled = false;
             this.cbochucvu.FormattingEnabled = true;
-            this.cbochucvu.Location = new System.Drawing.Point(95, 9);
+            this.cbochucvu.Location = new System.Drawing.Point(136, 9);
             this.cbochucvu.Name = "cbochucvu";
-            this.cbochucvu.Size = new System.Drawing.Size(172, 21);
+            this.cbochucvu.Size = new System.Drawing.Size(200, 27);
             this.cbochucvu.TabIndex = 1;
             // 
             // label6
@@ -243,15 +250,16 @@ namespace TShoes.UI.Modules
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(78, 19);
             this.label6.TabIndex = 0;
             this.label6.Text = "Chức vụ :";
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(170, 199);
+            this.btnLuu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(246, 271);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(75, 23);
+            this.btnLuu.Size = new System.Drawing.Size(75, 31);
             this.btnLuu.TabIndex = 3;
             this.btnLuu.Text = "&Lưu";
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -259,9 +267,10 @@ namespace TShoes.UI.Modules
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(251, 199);
+            this.btnHuy.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHuy.Location = new System.Drawing.Point(369, 271);
             this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(75, 23);
+            this.btnHuy.Size = new System.Drawing.Size(75, 31);
             this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "&Huỷ";
             this.btnHuy.UseVisualStyleBackColor = true;
@@ -282,24 +291,24 @@ namespace TShoes.UI.Modules
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(743, 61);
+            this.pictureBox2.Size = new System.Drawing.Size(1104, 61);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
             // 
             // btnTimkiem
             // 
-            this.btnTimkiem.Location = new System.Drawing.Point(210, 3);
+            this.btnTimkiem.Location = new System.Drawing.Point(234, 14);
             this.btnTimkiem.Name = "btnTimkiem";
-            this.btnTimkiem.Size = new System.Drawing.Size(60, 23);
+            this.btnTimkiem.Size = new System.Drawing.Size(102, 26);
             this.btnTimkiem.TabIndex = 3;
             this.btnTimkiem.Text = "Tìm kiếm";
             this.btnTimkiem.UseVisualStyleBackColor = true;
             // 
             // txttimkiem
             // 
-            this.txttimkiem.Location = new System.Drawing.Point(3, 5);
+            this.txttimkiem.Location = new System.Drawing.Point(27, 13);
             this.txttimkiem.Name = "txttimkiem";
-            this.txttimkiem.Size = new System.Drawing.Size(201, 21);
+            this.txttimkiem.Size = new System.Drawing.Size(201, 27);
             this.txttimkiem.TabIndex = 4;
             // 
             // paneltimkiem
@@ -307,9 +316,10 @@ namespace TShoes.UI.Modules
             this.paneltimkiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.paneltimkiem.Controls.Add(this.txttimkiem);
             this.paneltimkiem.Controls.Add(this.btnTimkiem);
-            this.paneltimkiem.Location = new System.Drawing.Point(456, 194);
+            this.paneltimkiem.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.paneltimkiem.Location = new System.Drawing.Point(733, 251);
             this.paneltimkiem.Name = "paneltimkiem";
-            this.paneltimkiem.Size = new System.Drawing.Size(273, 30);
+            this.paneltimkiem.Size = new System.Drawing.Size(357, 51);
             this.paneltimkiem.TabIndex = 2;
             // 
             // panel1
@@ -317,17 +327,18 @@ namespace TShoes.UI.Modules
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txtTennhanvien);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Location = new System.Drawing.Point(456, 67);
+            this.panel1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(733, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(270, 37);
+            this.panel1.Size = new System.Drawing.Size(354, 51);
             this.panel1.TabIndex = 4;
             // 
             // txtTennhanvien
             // 
-            this.txtTennhanvien.Location = new System.Drawing.Point(95, 10);
+            this.txtTennhanvien.Location = new System.Drawing.Point(139, 10);
             this.txtTennhanvien.Name = "txtTennhanvien";
             this.txtTennhanvien.ReadOnly = true;
-            this.txtTennhanvien.Size = new System.Drawing.Size(172, 21);
+            this.txtTennhanvien.Size = new System.Drawing.Size(197, 27);
             this.txtTennhanvien.TabIndex = 1;
             // 
             // label8
@@ -335,7 +346,7 @@ namespace TShoes.UI.Modules
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(3, 13);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 13);
+            this.label8.Size = new System.Drawing.Size(125, 19);
             this.label8.TabIndex = 0;
             this.label8.Text = "Tên Nhân Viên :";
             // 
@@ -359,7 +370,7 @@ namespace TShoes.UI.Modules
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucaccount";
-            this.Size = new System.Drawing.Size(743, 530);
+            this.Size = new System.Drawing.Size(1104, 639);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

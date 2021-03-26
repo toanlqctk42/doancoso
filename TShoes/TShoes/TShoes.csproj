@@ -72,6 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TshoesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TshoesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\Modules\ucaccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,12 +94,6 @@
     </Compile>
     <Compile Include="UI\Modules\ucdonhang.Designer.cs">
       <DependentUpon>ucdonhang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Modules\uchome.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\Modules\uchome.Designer.cs">
-      <DependentUpon>uchome.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Modules\ucsanpham.cs">
       <SubType>UserControl</SubType>
@@ -126,12 +125,10 @@
     <EmbeddedResource Include="UI\Modules\ucdonhang.resx">
       <DependentUpon>ucdonhang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Modules\uchome.resx">
-      <DependentUpon>uchome.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Modules\ucsanpham.resx">
       <DependentUpon>ucsanpham.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -141,6 +138,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TshoesDataSet.xsc">
+      <DependentUpon>TshoesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TshoesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TshoesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TshoesDataSet.xss">
+      <DependentUpon>TshoesDataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DAO\" />
