@@ -155,6 +155,7 @@ namespace TShoes
             this.Name = "frmHome";
             this.NavigationControl = this.accordionControl1;
             this.Text = "TSHOES";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHome_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);

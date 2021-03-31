@@ -50,7 +50,7 @@ namespace TShoes
             }
         }
 
-            private void acelogout_Click(object sender, EventArgs e)
+        private void acelogout_Click(object sender, EventArgs e)
         {
             frmlogin login = new frmlogin();
             login.Show();
@@ -122,6 +122,12 @@ namespace TShoes
             if (ModulesInfo.GetItem("ucdonhang") == null)
                 ModulesInfo.Add(new ModuleInfo("ucdonhang", "TShoes.UI.Modules.ucdonhang"));
             await LoadModuleAsync(ModulesInfo.GetItem("ucdonhang"));
+        }
+
+        private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmlogin login = new frmlogin();
+            login.Show();
         }
     }
 }
