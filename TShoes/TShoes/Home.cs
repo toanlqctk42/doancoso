@@ -26,7 +26,7 @@ namespace TShoes
             float WidthPerscpective = (float)Width / 820;
             float HeightPerscpective = (float)Height / 535;
             ResizeAllControls(this, WidthPerscpective, HeightPerscpective);
-            this.fluentDesignFormContainer1.Controls.Add(new ucsanpham() { Dock = DockStyle.Fill });
+            this.fluentDesignFormContainer1.Controls.Add(new ucBills() { Dock = DockStyle.Fill });
         }
 
         private void ResizeAllControls(Control recussiveControl, float widthPerscpective, float heightPerscpective)
@@ -90,9 +90,9 @@ namespace TShoes
 
         private async void acehome_Click(object sender, EventArgs e)
         {
-            if (ModulesInfo.GetItem("ucsanpham") == null)
-                ModulesInfo.Add(new ModuleInfo("ucsanpham", "TShoes.UI.Modules.ucsanpham"));
-            await LoadModuleAsync(ModulesInfo.GetItem("ucsanpham"));
+            if (ModulesInfo.GetItem("ucBills") == null)
+                ModulesInfo.Add(new ModuleInfo("ucBills", "TShoes.UI.Modules.ucBills"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucBills"));
         }
 
 
@@ -103,12 +103,6 @@ namespace TShoes
             await LoadModuleAsync(ModulesInfo.GetItem("ucaccount"));
         }
 
-        private async void acetaodonhangmoi_Click(object sender, EventArgs e)
-        {
-            if (ModulesInfo.GetItem("ucBills") == null)
-                ModulesInfo.Add(new ModuleInfo("ucBills", "TShoes.UI.Modules.ucBills"));
-            await LoadModuleAsync(ModulesInfo.GetItem("ucBills"));
-        }
 
         private async void acecapnhatdonhang_Click(object sender, EventArgs e)
         {
@@ -117,17 +111,24 @@ namespace TShoes
             await LoadModuleAsync(ModulesInfo.GetItem("ucBills"));
         }
 
-        private async void acexemdonhang_Click(object sender, EventArgs e)
-        {
-            if (ModulesInfo.GetItem("ucdonhang") == null)
-                ModulesInfo.Add(new ModuleInfo("ucdonhang", "TShoes.UI.Modules.ucdonhang"));
-            await LoadModuleAsync(ModulesInfo.GetItem("ucdonhang"));
-        }
-
         private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
         {
             frmlogin login = new frmlogin();
             login.Show();
+        }
+
+        private async void acesanpham_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucsanpham") == null)
+                ModulesInfo.Add(new ModuleInfo("ucsanpham", "TShoes.UI.Modules.ucsanpham"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucsanpham"));
+        }
+
+        private async void acedonhang_Click(object sender, EventArgs e)
+        {
+            if (ModulesInfo.GetItem("ucdonhang") == null)
+                ModulesInfo.Add(new ModuleInfo("ucdonhang", "TShoes.UI.Modules.ucdonhang"));
+            await LoadModuleAsync(ModulesInfo.GetItem("ucdonhang"));
         }
     }
 }

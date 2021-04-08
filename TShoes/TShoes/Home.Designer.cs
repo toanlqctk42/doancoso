@@ -31,9 +31,8 @@ namespace TShoes
         {
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.acehome = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acesanpham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acedonhang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.acetaodonhangmoi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.acexemdonhang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.aceaccount = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acexemtaikhoan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acelogout = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -48,6 +47,7 @@ namespace TShoes
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.acehome,
+            this.acesanpham,
             this.acedonhang,
             this.aceaccount});
             this.accordionControl1.Location = new System.Drawing.Point(0, 27);
@@ -61,6 +61,7 @@ namespace TShoes
             // 
             // acehome
             // 
+            this.acehome.Expanded = true;
             this.acehome.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
@@ -70,11 +71,20 @@ namespace TShoes
             this.acehome.Text = "Trang Chủ";
             this.acehome.Click += new System.EventHandler(this.acehome_Click);
             // 
+            // acesanpham
+            // 
+            this.acesanpham.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.acesanpham.Name = "acesanpham";
+            this.acesanpham.Text = "Sản phẩm";
+            this.acesanpham.Click += new System.EventHandler(this.acesanpham_Click);
+            // 
             // acedonhang
             // 
-            this.acedonhang.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.acetaodonhangmoi,
-            this.acexemdonhang});
+            this.acedonhang.Expanded = true;
             this.acedonhang.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
@@ -82,20 +92,7 @@ namespace TShoes
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
             this.acedonhang.Name = "acedonhang";
             this.acedonhang.Text = "Đơn hàng";
-            // 
-            // acetaodonhangmoi
-            // 
-            this.acetaodonhangmoi.Name = "acetaodonhangmoi";
-            this.acetaodonhangmoi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.acetaodonhangmoi.Text = "Tạo Đơn Hàng mới ";
-            this.acetaodonhangmoi.Click += new System.EventHandler(this.acetaodonhangmoi_Click);
-            // 
-            // acexemdonhang
-            // 
-            this.acexemdonhang.Name = "acexemdonhang";
-            this.acexemdonhang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.acexemdonhang.Text = "Xem danh sách đơn hàng";
-            this.acexemdonhang.Click += new System.EventHandler(this.acexemdonhang_Click);
+            this.acedonhang.Click += new System.EventHandler(this.acedonhang_Click);
             // 
             // aceaccount
             // 
@@ -171,7 +168,6 @@ namespace TShoes
         private DevExpress.XtraBars.Navigation.AccordionControlElement acexemtaikhoan;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acelogout;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer fluentDesignFormContainer1;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement acetaodonhangmoi;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement acexemdonhang;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement acesanpham;
     }
 }
