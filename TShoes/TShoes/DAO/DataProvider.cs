@@ -28,7 +28,7 @@ namespace TShoes.DAO
 
 			private DataProvider()
 			{
-				connectionSTR = "Data Source=DESKTOP-D5J6KVO;Initial Catalog=Tshoes;Integrated Security=True";
+				connectionSTR = "Data Source=DESKTOP-03II1QV;Initial Catalog=QuanLyGiayDep;Integrated Security=True";
 			}
 
 			public DataTable ExecuteQuery(string query, object[] parameter = null)
